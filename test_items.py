@@ -8,7 +8,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 def test_exist_add_to_cart_button(browser):
 	# переход на нужную страницу
     browser.get(link)
-    time.sleep(30)
+    #time.sleep(30)
 	# поиск кнопки добавления товара в корзину. Если не находит срабатывает исключение.
     WebDriverWait(browser, 5).until(
 		EC.visibility_of_element_located((By.CLASS_NAME, "btn-add-to-basket")), "No add to cart button on page")
